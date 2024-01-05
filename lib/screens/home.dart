@@ -1,6 +1,6 @@
-import 'package:firstapp/constants/app_constants.dart';
-import 'package:firstapp/widgets/left_bar.dart';
-import 'package:firstapp/widgets/right_bar.dart';
+import 'package:bmi_calculator/constants/app_constants.dart';
+import 'package:bmi_calculator/widgets/left_bar.dart';
+import 'package:bmi_calculator/widgets/right_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 
@@ -59,7 +59,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                     ),
                     Container(
-                      width: 130,
+                      width: 160,
                       child: TextField(
                         controller: _weightController,
                         style: TextStyle(
@@ -81,7 +81,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     )
                   ], 
                 ),
-                SizedBox(height: 30,),
+                SizedBox(height: 20,),
                 GestureDetector(
                   onTap: (){
                     double _h= double.parse(_heightController.text);
@@ -121,7 +121,6 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                   ),
                 ),
-                SizedBox(height: 10,),
                 LeftBar(barWidth: 40),
                 SizedBox(height: 20,),
                 LeftBar(barWidth: 70,),

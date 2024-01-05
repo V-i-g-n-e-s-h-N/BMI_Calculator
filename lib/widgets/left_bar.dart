@@ -12,11 +12,12 @@ class LeftBar extends StatelessWidget {
         Container(
             height: 25,
             width: barWidth,
-            decoration: const BoxDecoration(
+            decoration: BoxDecoration(
+                color: accentHexColor,
                 borderRadius: BorderRadius.only(
                     bottomLeft: Radius.circular(20),
                     topLeft: Radius.circular(20))),
-            color: accentHexColor)
+            )
       ],
     );
   }
